@@ -3,9 +3,9 @@ package com.sistemas.api.repositorio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.sistemas.api.dominio.Pedido;
+import com.sistemas.api.dominio.PedidoDetalle;
 
 @Repository
-public interface PedidoRepository extends JpaRepository<Pedido, Long>{
+public interface PedidoDetalleRepository extends JpaRepository<PedidoDetalle, Long>{
 
 }

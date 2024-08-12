@@ -1,5 +1,7 @@
 package com.sistemas.api.servicio;
 
-public class PedidoService {
+import com.sistemas.api.dominio.Pedido;
+
+public interface PedidoService extends iGenericoService<Pedido, Long> {
 
 }
