@@ -1,5 +1,6 @@
 package com.sistemas.api.servicio.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,8 +27,21 @@ public class PedidoServiceImpl implements PedidoService {
 	
 	@Override
 	public Pedido agregar(Pedido entidad) {
-		TipoPago guardarTipoPago = tipoPagoRepository.save(entidad.getTipoPago());
-		entidad.setTipoPago(guardarTipoPago);
+		/*TipoPago guardarTipoPago = tipoPagoRepository.save(entidad.getTipoPago());
+		entidad.setTipoPago(guardarTipoPago);*/
+		if (entidad.getTipoPago() != null && entidad.getTipoPago().getTipoPagoID() != null) {
+			TipoPago tipoPagoExistente = tipoPagoRepository.findById(entidad.getTipoPago().getTipoPagoID())
+					.orElseThrow(() -> new IllegalArgumentException("Tipo pago no encontrado con id " + entidad.getTipoPago().getTipoPagoID()));
+			entidad.setTipoPago(tipoPagoExistente);
+		} else {
+			TipoPago guardarTipoPago = tipoPagoRepository.save(entidad.getTipoPago());
+			entidad.setTipoPago(guardarTipoPago);
+		}
+		
+		// Inicializa pedidoDetalles si es null
+		if (entidad.getDetalles() == null) {
+			entidad.setDetalles(new ArrayList<>());
+		}
 		
 		Pedido guardarPedido = pedidoRepository.save(entidad);
 		

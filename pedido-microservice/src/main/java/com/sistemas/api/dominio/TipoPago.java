@@ -2,6 +2,8 @@ package com.sistemas.api.dominio;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -27,6 +29,7 @@ public class TipoPago {
     @Column(nullable = false)
     private String descripcion;
     
+    @JsonIgnore
     @OneToMany(targetEntity = Pedido.class, fetch = FetchType.LAZY, mappedBy = "tipoPago")
     private List<Pedido> pedido;
 }
