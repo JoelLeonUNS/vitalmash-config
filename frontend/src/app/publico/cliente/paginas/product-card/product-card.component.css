@@ -1,0 +1,113 @@
+nz-card {
+  max-width: 60%; 
+  margin: 30px auto; 
+  border-radius: 12px; 
+  padding: 20px; 
+  background-color: var(--background-default-default);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.product-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.product-image {
+  flex: 1;
+  position: relative;
+  padding: 30px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-default-secondary);
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 15px; 
+  left: 15px;
+  font-size: 24px; 
+  color: #333;
+}
+
+.product-image img {
+  max-width: 100%; 
+  height: auto;
+}
+
+.product-info {
+  flex: 1.5; 
+  padding: 30px; 
+}
+
+.product-info h2 {
+  font-size: 24px; 
+  font-weight: 600; 
+  margin-bottom: 10px;
+}
+
+nz-tag {
+  background-color: #e8f5e9;
+  color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px; 
+  font-size: 14px; 
+  margin-bottom: 15px; 
+}
+
+.product-info h3 {
+  font-size: 28px; 
+  font-weight: 600;
+  margin: 15px 0;
+  color: #000;
+}
+
+.selectors {
+  display: flex;
+  gap: 25px; 
+  margin-bottom: 30px; 
+}
+
+.select-container label {
+  font-size: 16px; 
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.actions button {
+  width: 100%;
+  font-size: 18px; 
+  border-radius: 6px;
+  height: 50px; 
+  transition: background-color 0.3s, border-color 0.3s; /* Añade transición para suavizar el cambio de color */
+}
+
+
+button[nzType="primary"] {
+  background-color: var(--color-firebrick);
+  border-color: var(--color-firebrick);
+}
+
+button[nzType="primary"]:hover {
+  background-color: var(--color-crimson); /* Un tono más claro para el hover */
+  border-color: var(--color-crimson);
+}
+
+button[nzType="default"] {
+  background-color: var(--color-pink);
+  border-color: var(--color-pink);
+  color: var(--color-firebrick);
+}
+
+button[nzType="default"]:hover {
+  background-color: darken(var(--color-pink), 10%);
+  border-color: darken(var(--color-pink), 10%);
+  color: lighten(var(--color-firebrick), 10%);
+}

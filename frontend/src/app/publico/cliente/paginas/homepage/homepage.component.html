@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="homepage">
+  <section class="frame-parent">
+    <div class="slogan">
+      <img class="web-1-icon" loading="lazy" alt="" src="assets/imagenes/Web.jpg" />
+      <button class="button comprar-ahora">COMPRAR AHORA</button>
+    </div>
+  </section>
+<h1 >Mejores Productos</h1>
+  <section class="products">
+    <div nz-row [nzGutter]="16" class="products-row">
+      <div nz-col nzSpan="8" *ngFor="let product of products" class="product-col">
+        <nz-card class="product-card">
+          <div class="card-cover">
+            <img src="assets/imagenes/product.jpg" alt="{{ product.title }}" class="product-image"/>
+          </div>
+          <nz-card-meta
+            nzTitle="{{ product.title }}"
+            nzDescription="{{ product.description }}">
+          </nz-card-meta>
+        </nz-card>
+      </div>
+    </div>
+  </section>
+<h1>Sobre Nosotros</h1>
+  <section class="story">
+    <div class="story-content">
+      <img class="imagen-izquierda-1-icon" loading="lazy" alt="" src="assets/imagenes/imagen_izquierda.jpg" />
+
+      <div class="conoce-ms-vitalmash-container">
+        <p class="conoce-ms">Conoce más:</p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">
+          Vitalmash, es una marca creada por jóvenes estudiantes que buscan
+          como objetivo principal: Mejorar la alimentación de nuestra
+          población, pero primordialmente para personas de 50 a más años.
+        </p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="conoce-ms">Integrantes</p>
+        <p class="blank-line">&nbsp;</p>
+        <p class="blank-line">
+          Integran el equipo Anabel Corales Alejos (Ing. Agroindustrial, 6to ciclo), Dayana Cohaila Aguilar (Ing. Agroindustrial, 6to ciclo), Joel Leon Mondoñedo (Ing. Sistemas e Informática 5to ciclo) y Angie Rios Custodio (Ing. Sistemas e Informática, 5to ciclo) estudiantes de la Universidad Nacional del Santa.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>

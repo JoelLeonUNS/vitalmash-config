@@ -1,0 +1,67 @@
+.inicio1 {
+    position: absolute;
+    top: 43px;
+    right: 710px;
+    line-height: 130%;
+    font-weight: 600;
+  }
+  .productos {
+    top: 43px;
+    right: 548px;
+  }
+  .acerca-de-nosotros,
+  .productos {
+    position: absolute;
+    line-height: 130%;
+    font-weight: 600;
+  }
+  .acerca-de-nosotros {
+    top: 43px;
+    right: 295px;
+  }
+
+
+  .cart-button {
+    position: absolute;
+    top: 32px;
+    right: 107px;
+    border-radius: var(--br-base);
+    background-color: var(--color-firebrick);
+    width: 126px;
+    height: 48px;
+    overflow: hidden;
+    font-size: var(--body-strong-size);
+    color: var(--background-default-default);
+  }
+  .logotipo-1-icon1 {
+    width: 184.7px;
+    position: relative;
+    height: 32px;
+    object-fit: cover;
+  }
+  .logo1 {
+    position: absolute;
+    top: 28px;
+    left: 77px;
+    width: 203px;
+    height: 52px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+  .header1 {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    mix-blend-mode: normal;
+    text-align: center;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--body-strong);
+  }
+  

@@ -1,0 +1,35 @@
+<app-header></app-header>
+<nz-card>
+  <div class="product-container">
+    <div class="product-image">
+      <i nz-icon nzType="heart" nzTheme="outline" class="favorite-icon"></i>
+      <img src="assets/imagenes/product.jpg" alt="Vitalmash" />
+    </div>
+    <div class="product-info">
+      <h2>Kefir con mango y yacon</h2>
+      <nz-tag>Tag</nz-tag>
+      <h3>$14.50</h3>
+      <p>Text</p>
+      <div class="selectors">
+        <div class="select-container">
+          <label>Litros</label>
+          <nz-select [(ngModel)]="selectedLiters" nzPlaceHolder="Selecciona litros">
+            <!-- Uso directo de *ngFor en nz-option -->
+            <nz-option *ngFor="let option of litersOptions" [nzValue]="option.value" [nzLabel]="option.label"></nz-option>
+          </nz-select>
+        </div>
+        <div class="select-container">
+          <label>Cantidad</label>
+          <nz-select [(ngModel)]="selectedQuantity" nzPlaceHolder="Selecciona cantidad">
+            <!-- Uso directo de *ngFor en nz-option -->
+            <nz-option *ngFor="let option of quantityOptions" [nzValue]="option.value" [nzLabel]="option.label"></nz-option>
+          </nz-select>
+        </div>
+      </div>
+      <div class="actions">
+        <button nz-button nzType="primary">Comprar</button>
+        <button nz-button nzType="default">Añadir a la cesta</button>
+      </div>
+    </div>
+  </div>
+</nz-card>

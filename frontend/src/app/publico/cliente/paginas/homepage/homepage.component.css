@@ -1,0 +1,204 @@
+.homepage {
+  width: 100%;
+  position: relative;
+  background-color: var(--background-default-default);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-9xl) 0 50px; /* Reducido el padding inferior */
+  gap: 2rem; /* Reducido el espacio entre secciones */
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  margin: 1rem 0 1rem; /* Aumentado el margen superior y reducido el inferior */
+}
+
+
+
+.slogan {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ajusta la altura según el aspecto de tu imagen */
+  overflow: hidden;
+}
+
+.web-1-icon {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button.comprar-ahora {
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+  padding: 10px 20px;
+  background-color: #B22222; /* Color rojo similar al de la imagen */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.button.comprar-ahora:hover {
+  background-color: #8B0000; /* Un rojo más oscuro para el hover */
+}
+
+
+
+.story {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 25px 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: justify;
+  font-size: var(--body-strong-size);
+  color: var(--color-black);
+  font-family: var(--body-strong);
+  box-sizing: border-box;
+}
+
+.story-content {
+  width: 1253px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 53px;
+  max-width: 100%;
+}
+
+.imagen-izquierda-1-icon {
+  height: 469px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  min-width: 427px;
+}
+
+.conoce-ms-vitalmash-container {
+  width: 543px;
+  position: relative;
+  line-height: 160%;
+  display: inline-block;
+  flex-shrink: 0;
+  min-width: 543px;
+  max-width: 100%;
+}
+
+.conoce-ms {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.blank-line {
+  margin: 0;
+}
+
+
+.products {
+  padding:  0;
+}
+
+.products-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-col {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px; /* Ajusta este valor según el tamaño que prefieras */
+}
+
+.product-card {
+  width: 100%;
+  height: 100%;
+}
+
+.card-cover {
+  height: 200px; /* Ajusta la altura de la imagen */
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nz-card-meta {
+  padding: 16px;
+}
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .product-col {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-col {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .conoce-ms-vitalmash-container {
+    flex: 1;
+  }
+  .story-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .frame-parent {
+    gap: var(--gap-base);
+  }
+  .conoce-ms-vitalmash-container,
+  .imagen-izquierda-1-icon {
+    min-width: 100%;
+  }
+  .story-content {
+    gap: var(--gap-7xl);
+  }
+  .homepage {
+    gap: var(--gap-20xl);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .homepage {
+    gap: var(--gap-xl);
+  }
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .button.comprar-ahora {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 5%;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

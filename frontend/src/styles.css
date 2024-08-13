@@ -1,0 +1,86 @@
+:root {
+
+  
+    /* font sizes */
+    --body-strong-size: 16px;
+    --font-size-lg: 18px;
+    --body-small-size: 14px;
+    --font-size-45xl: 64px;
+    --font-size-19xl: 38px;
+    --font-size-32xl: 51px;
+    --font-size-xl: 20px;
+    --font-size-29xl: 48px;
+    --font-size-10xl: 29px;
+    --heading-size: 24px;
+  
+    /* Colors */
+    --background-default-default: #fff;
+    --color-black: #000;
+    --border-default-default: #d9d9d9;
+    --text-default-secondary: #757575;
+    --background-brand-default: #2c2c2c;
+    --text-default-default: #1e1e1e;
+    --color-firebrick: #b71e29;
+    --color-crimson: #de454f;
+    --color-pink: #f6c6c9;
+    --text-neutral-on-neutral-tertiary: #434343;
+    --background-default-secondary: #f5f5f5;
+    --background-positive-secondary: #cff7d3;
+    --text-positive-on-positive-secondary: #03542d;
+  
+    
+    /* Spacing */
+    --space-400: 16px;
+    --radius-200: 8px;
+    --space-200: 8px;
+    --space-1600: 64px;
+    --space-600: 24px;
+    --device-width: 1200px;
+    --scale-06: 32px;
+    --padding-lg: 16px;
+    --padding-sm: 8px;
+    --space-100: 4px;
+  
+    /* Gaps */
+    --gap-59xl: 78px;
+    --gap-xl: 20px;
+    --gap-20xl: 39px;
+    --gap-7xl: 26px;
+    --gap-base: 16px;
+    --gap-5xs: 8px;
+    --gap-13xl: 32px;
+    --gap-42xl-5: 61.5px;
+    --gap-mini: 15px;
+    --gap-12xl: 31px;
+    --gap-5xl: 24px;
+  
+    /* Paddings */
+    --padding-9xl: 28px;
+    --padding-xl: 20px;
+    --padding-base: 16px;
+    --padding-mini: 15px;
+    --padding-62xl: 81px;
+    --padding-1345xl: 1364px;
+    --padding-34xl: 53px;
+    --padding-19xl: 38px;
+    --padding-lgi: 19px;
+    --padding-4xl: 23px;
+    --padding-58xl: 77px;
+    --padding-sm-5: 13.5px;
+    --padding-3xl: 22px;
+    --padding-2xs: 11px;
+    --padding-3xs: 10px;
+    --padding-4xs: 9px;
+    --padding-13xl: 32px;
+    --padding-5xs: 8px;
+    --padding-7xs: 6px;
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+    --br-base: 16px;
+  
+    /* Effects */
+    --drop-shadow-200: 0px 1px 4px rgba(12, 12, 13, 0.1),
+      0px 1px 4px rgba(12, 12, 13, 0.05);
+  }
+  
