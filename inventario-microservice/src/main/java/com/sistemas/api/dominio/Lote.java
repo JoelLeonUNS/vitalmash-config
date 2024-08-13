@@ -1,4 +1,4 @@
-package dominio;
+package com.sistemas.api.dominio;
 
 import java.util.Date;
 

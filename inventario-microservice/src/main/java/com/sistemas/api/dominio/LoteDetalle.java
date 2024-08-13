@@ -1,4 +1,4 @@
-package dominio;
+package com.sistemas.api.dominio;
 
 import jakarta.persistence.*;
 import lombok.Data;
